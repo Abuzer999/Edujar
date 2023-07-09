@@ -1,0 +1,212 @@
+.category {
+    margin-top: 100px;
+    position: relative;
+
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__object-one {
+        position: absolute;
+        width: 111px;
+        height: 222px;
+        top: -25%;
+        right: 0;
+
+    }
+
+    &__object-two {
+        position: absolute;
+        width: 419px;
+        height: 244px;
+        left: 0%;
+        top: -30%;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title-text {
+        font-family: 'Caladea';
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 70px;
+        letter-spacing: -0.5px;
+        color: $white;
+
+        span {
+            color: $pink;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px 30px;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+
+        width: 380px;
+        height: 80px;
+
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        gap: clamp(0.875rem, (0.727rem + 0.63vw), 1.375rem);
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 22px;
+        color: $white;
+        padding: 5px 0 0 28px;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 33px;
+            height: 33px;
+        }
+
+        
+
+    
+    }
+
+    &__one {
+        &::before {
+            background: url('./img/Pen.svg');
+        }
+    }
+
+    &__two {
+        &::before {
+            background: url('./img/Layers.svg');
+        }
+    }
+
+    &__three {
+        &::before {
+            width: 27px;
+            height: 27px;
+            background: url('./img/Paper.svg');
+        }
+    }
+
+    &__four {
+        &::before {
+            width: 27px;
+            height: 27px;
+            background: url('./img/Img_box.svg');
+        }
+    }
+
+    &__five {
+        &::before {
+            background: url('./img/Database.svg');
+        }
+    }
+
+    &__six {
+        &::before {
+            width: 27px;
+            height: 27px;
+            background: url('./img/pizza.svg');
+        }
+    }
+
+    &__seven {
+        &::before {
+            width: 27px;
+            height: 27px;
+            background: url('./img/Chart_pin.svg');
+        }
+    }
+
+    &__eight {
+        &::before {
+
+            background: url('./img/Music.svg');
+        }
+    }
+    
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 14px;
+        width: 50px;
+        height: 50px;
+        background: #7F56D9;
+        border-radius: 5px;
+        border: 0;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 32px;
+            background: url('./img/arrow.svg');
+        }
+
+    }
+
+}
+
+@media (max-width: 1239px) {
+    .category {
+        &__object-one {
+            width: 70px;
+
+            top: -5%;
+            z-index: -1;
+        }
+
+        &__object-two {
+            left: -15%;
+            top: -5%;
+            z-index: -1;
+        }
+    }
+}
+
+@media (max-width: $normal) {
+    .category {
+        &__title-text {
+           text-align: center;
+        }
+
+        &__buttons {
+            margin-top: 5px;
+        }
+
+        &__object-one {
+            width: 40px;
+
+            top: 6%;
+            z-index: -1;
+        }
+
+        &__object-two {
+            left: -24%;
+            top: -5%;
+            z-index: -1;
+        }
+    }
+}

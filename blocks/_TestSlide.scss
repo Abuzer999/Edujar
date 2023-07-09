@@ -1,0 +1,202 @@
+.TestSlide {
+    position: relative;
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 174px;
+        gap: clamp(1.25rem, calc(-4.013rem + 26.32vw), 7.5rem);
+    }
+
+
+    &__title {
+        align-items: center;
+        text-align: center;
+        font-family: 'Caladea';
+        font-weight: 700;
+        font-size: clamp(3.125rem, calc(0.308rem + 14.08vw), 4.375rem);
+        line-height: 70px;
+        letter-spacing: -0.5px;
+        color: $white;
+
+    }
+
+    &__object-one {
+        position: absolute;
+        max-width: 387px;
+        width: 100%;
+        height: 583px;
+
+        left: clamp(-25.625rem, calc(-57.198rem + 54.44vw), 8.125rem);
+        bottom: 160px;
+    }
+
+    &__object-two {
+        position: absolute;
+        max-width: 335px;
+        width: 100%;
+        height: 607px;
+
+        right: clamp(-24.375rem, calc(-56.825rem + 55.95vw), 10.313rem);
+        bottom: 205px;
+    }
+
+    &__object-three {
+        position: absolute;
+        max-width: 694px;
+        width: 100%;
+        height: 694px;
+        filter: blur(80px);
+
+        right: -124px;
+        bottom: 130px;
+    }
+
+    &__center {
+        display: flex;
+        flex-direction: column;
+        max-width: clamp(21.688rem, calc(9.735rem + 59.76vw), 65.313rem);
+        width: 100%;
+        min-height: 420px;
+
+        background: #381D74;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 30px;
+        margin-bottom: 158px;
+        cursor: pointer;
+ 
+    }
+
+    &__tops {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(218, 218, 247, 0.32);
+        padding: 30px 0 20px 20px;
+        margin-left: 35px;
+        margin-right: 51px;
+
+
+        &::after {
+            content: '';
+            display: block;
+            width: 104px;
+            height: 17px;
+            background: url('./img/stars.svg');
+        }
+
+        @media (max-width: 750px) {
+            padding: 20px 0 20px 0px;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    &__texts {
+        display: flex;
+        align-items: center;
+
+        gap: 19px;
+        
+        span {
+            margin-top: 7px;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: $bluing;
+        }
+
+        img {
+           width: 43px;
+           height: 43px;
+        }
+    } 
+
+    &__bottom-title {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        color: $bluing;
+
+    }
+
+
+    &__info {
+        padding: 50px 63px 0 35px;
+
+        @media(width < 1200px) {
+            padding: 25px 31px 20px 17px;
+        }
+    }
+
+    &__text {
+        max-width: 948px;
+        width: 100%;
+        
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: clamp(1.063rem, calc(0.994rem + 0.34vw), 1.25rem);
+        line-height: clamp(1.75rem, calc(1.659rem + 0.45vw), 2rem);
+        color: #B0B0D1;
+
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+        z-index: 1000;
+        padding: 34px 30px 0 0;
+        justify-content: end;
+
+        @media(width < 1200px) {
+            display: flex;
+            padding: 0 0 56px 0;
+            justify-content: center;
+        }
+    }
+
+    &__one, &__two {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border: 0;
+        background: 0;
+    }
+
+    &__one {
+        &::after {
+            content: '';
+            display: block;
+            width: 23px;
+            height: 20px;
+            background-image: url('./img/test__strel.svg');
+            transform: rotate(360deg);
+        }
+
+    }
+
+    &__two {
+        &::after {
+            content: '';
+            display: block;
+            width: 23px;
+            height: 20px;
+            background-image: url('./img/test__strel.svg');
+            transform: rotate(180deg);
+
+        }
+    }
+}
+
+.swiper {
+    max-width: 1015px;
+    width: 100%;
+}
+
+

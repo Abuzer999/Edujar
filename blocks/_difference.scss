@@ -1,0 +1,210 @@
+.difference {
+    position: relative;
+    margin-top: 154px;
+    margin-bottom: 32px;
+    background-color:rgba(55, 38, 93, 0.43);
+
+    &__top {
+        justify-content: center;
+        display: flex;
+        gap: clamp(3.125rem, calc(2.234rem + 4.45vw), 6.688rem);
+        position: relative;
+
+        @media (max-width: 650px) {
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+    }
+
+    &__object-one {
+        position: absolute;
+        max-width: 73px;
+        width: 100%;
+        height: 74px;
+        z-index: 100;
+        right: 90px;
+    }
+
+    &__object-two {
+        position: absolute;
+        max-width: 694px;
+        width: 100%;
+        height: 694px;
+        filter: blur(80px);
+
+        left: 20px;
+        top: 0;
+    }
+
+
+    &__block-left {
+        padding: 124px 0 39px;
+
+        @media (max-width: 650px) {
+            margin: -310px 0px -9px;
+            width: clamp(19.25rem, calc(13.068rem + 30.91vw), 25.625rem);
+            margin-left: clamp(-0.313rem, calc(-7.706rem + 36.97vw), 7.313rem);
+        }
+    }
+
+    &__block-right {
+        margin: 120px 0;
+
+        @media(width < 1420px) {
+            margin-top: clamp(3.75rem, calc(0.394rem + 7.16vw), 7.5rem);
+            display: block;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-family: 'Caladea';
+        font-weight: 700;
+        font-size: clamp(1.25rem, calc(-1.547rem + 5.97vw), 4.375rem);
+        line-height: clamp(1.25rem, calc(0.304rem + 4.73vw), 5rem);
+        color: $white;
+
+        span {
+            color: $pink;
+        }
+    }
+
+    &__text-one, &__text-two {
+        max-width: clamp(23.438rem, calc(-4.363rem + 59.31vw), 54.5rem);
+        width: 100%;
+
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: clamp(1rem, calc(0.664rem + 0.72vw), 1.375rem);
+        line-height: clamp(1.563rem, calc(0.723rem + 1.79vw), 2.5rem);
+        color: #B0B0D1;
+
+        @media (max-width: 650px) {
+            max-width: 650px;
+            
+        }
+
+    }
+    &__text-two {
+        margin-top: clamp(0.625rem, calc(-1.165rem + 3.82vw), 2.625rem);
+    }
+
+
+    &__info {
+        display: flex;
+        margin: 79px 0;
+        gap: clamp(3.75rem, calc(2.159rem + 7.95vw), 8.125rem);
+
+        @media(width < 1420px) {
+            margin-top: clamp(-1.813rem, calc(-5.337rem + 7.52vw), 2.125rem);
+            margin-bottom: 34px;
+            gap: clamp(0.938rem, calc(-8.74rem + 20.64vw), 11.75rem);
+        }
+
+        @media (max-width: 650px) {
+           display: flex;
+           justify-content: space-between;
+           margin: 20px 0;
+        }
+
+    }
+
+    &__info-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+
+    &__info-txta {
+        display: flex;
+        font-family: 'Caladea';
+        font-weight: 700;
+        font-size: clamp(1.375rem, calc(0.816rem + 1.19vw), 2rem);
+        line-height: 40px;
+        letter-spacing: 0.0075em;
+        color: $white;
+
+
+        &::before {
+            content: '';
+            display: block;
+            width: 84px;
+            height: 84px;
+            margin-right: 13px;
+        }
+
+        @media(width < 1420px) {
+            display: block;
+            margin-right: 0;
+        }
+    }
+
+    &__one {
+        &::before {
+            background: url('./img/img1.svg');
+        }
+    }
+
+    &__two {
+        margin-left: clamp(0rem, calc(-1.119rem + 2.39vw), 1.25rem);
+        &::before {
+            background: url('./img/img2.svg');
+        }
+    }
+
+    &__three {
+        &::before {
+            background: url('./img/img3.svg');
+        }
+    }
+
+    &__info-txts, &__info-txtz, &__info-txtx {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: clamp(1rem, calc(0.776rem + 0.48vw), 1.25rem);
+        line-height: 28px;
+        color: #B0B0D1;
+    }
+
+    &__info-txts {
+        margin-top: -70px;
+        margin-right: -137px;
+
+        @media(width < 1420px) {
+            margin-top: -31px;
+            margin-right: -7px;
+        }
+    }
+
+    &__info-txtz {
+        margin-top: -70px;
+        margin-right: -80px;
+
+        @media(width < 1420px) {
+            margin-top: -31px;
+            margin-right: 3px;
+        }
+    }
+
+    &__info-txtx {
+        margin-top: -70px;
+        margin-right: -50px;
+
+        @media(width < 1420px) {
+            margin-top: -31px;
+            margin-right: 10px;
+        }
+    }
+
+
+
+}
+
+
+    
+
