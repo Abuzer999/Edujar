@@ -25,7 +25,7 @@ const navigation = document.querySelector('.burger-block__navigation');
 const aMob = document.querySelectorAll('.header__link');
 const body = document.body;
 
-burger.addEventListener('click', () => {
+menu.addEventListener('click', () => {
   navigation.classList.toggle('actives');
   body.classList.toggle('hidden')
   menu.classList.toggle('active')
